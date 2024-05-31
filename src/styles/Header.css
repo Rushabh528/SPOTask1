@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  color: #ffcc00;
+}
+
+header ul li a.active {
+  color: #ffcc00;
+  text-decoration: underline;
+}
